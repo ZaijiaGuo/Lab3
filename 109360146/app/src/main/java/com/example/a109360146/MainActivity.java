@@ -41,11 +41,11 @@ public class MainActivity extends AppCompatActivity {
 
                     if(scissor.isChecked())
                         playermora.setText("我方出拳\n剪刀");
-                    else if(stone.isClickable())
+                    else if(stone.isChecked())
                         playermora.setText("我方出拳\n石頭");
-                    else if(paper.isClickable())
+                    else if(paper.isChecked())
                         playermora.setText("我方出拳\n布");
-                    
+
                     int computer_random = (int)(Math.random()*3);
                     if(computer_random == 0)
                         computermora.setText("電腦出拳\n剪刀");
